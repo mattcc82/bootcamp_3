@@ -1,0 +1,61 @@
+html,
+body {     
+    height: 100%;
+}
+html {
+    overflow-y: auto !important;
+}
+body {
+    background-color: #363636;
+}
+[v-cloak] {
+    display: none;
+}
+.hero:not(.is-fullheight):not(.is-large) {
+    margin-top: 52px;
+}
+.main-content {
+    background-color: #363636;
+}
+.progress {
+    transition: width .5s ease-in-out;
+}
+.card {
+    width: 100%;
+    background-color: rgba(255,255,255,0.1) !important;
+}
+.echarts {
+    width: 100% !important;
+}
+.focused {
+    background-color: #fff !important;
+    color: #ff3860 !important;
+    border-color: #fff !important;
+}
+
+/* VUE TRANSITION ANIMATION */
+.fade-enter-active {
+    transition: opacity .5s;
+}
+.fade-leave-active {
+    opacity: 0;
+}
+.fade-enter,
+.fade-leave-to
+{
+    opacity: 0;
+}
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+    /* .slide-fade-leave-active below version 2.1.8 */
+    transform: translateX(10px);
+    opacity: 0;
+}
